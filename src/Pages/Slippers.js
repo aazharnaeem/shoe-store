@@ -11,8 +11,8 @@ const Slippers =()=>{
         <div className="prooo">
     {data.map((proo, ind)=>proo.Category === 'Slippers'?(
         
-        <div  className="pro-con">
-                <Link key={ind} className='lnk' to={`/men${proo.id}`}>
+        <div key={ind}  className="pro-con">
+                <Link key={ind} className='lnk' to={`/shoe${proo.id}`}>
             <img src={proo.image} alt=""  title={proo.Name}/>
                 </Link>
                 <p>{proo.Name} < br /><strong>Rs.{proo.Price}</strong></p>

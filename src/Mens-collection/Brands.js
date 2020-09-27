@@ -11,18 +11,18 @@ const Brands = ()=>{
 
     return(
         <div>
-            Collection:<select onChange={event => handleChange(event.target.value)}>
+            <strong>Collection:</strong><select onChange={event => handleChange(event.target.value)} className='select'>
                             <option>Brands</option>
-                            <option>Addidas</option>
-                            <option>Nike</option>
-                            <option>Air Jordan</option>
-                            <option>Vans</option>
-                            <option>New Balance</option>
-                            <option>Gucci</option>
-                            <option>Casual</option>
-                            <option>Super Max</option>
-                            <option>Sky</option>
-                            <option>Balenciaga</option>
+                            <option value='Addidas'>Addidas</option>
+                            <option value='Nike'>Nike</option>
+                            <option value='Air Jordan'>Air Jordan</option>
+                            <option value='Vans'>Vans</option>
+                            <option value='New Balance'>New Balance</option>
+                            <option value='Gucci'>Gucci</option>
+                            <option value='Casual'>Casual</option>
+                            <option value='Super Max'>Super Max</option>
+                            <option value='Sky'>Sky</option>
+                            <option value='Balenciaga'>Balenciaga</option>
                         </select>
         </div>
     )

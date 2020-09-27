@@ -1,15 +1,14 @@
 import React from 'react'
+import '../App.css'
 
 const NewsLetter=()=>{
     return(
-        <div>
-            <h2>Want to stay Updated? Subscribe to our NewsLetter!</h2>
-        <form>
-        <input type="text" />
-        <input type="email" />
-        <input type="submit" />
-        </form>
-        </div>
+        <div className="news-letter">
+        <h3>NEWS LETTER</h3>
+        <p>Get timely updates from your favourite product</p>
+        <input type="email" placeholder="Enter your Email"  size="50"/>
+        <button>Subscribe</button>
+      </div>
     )
 }
 

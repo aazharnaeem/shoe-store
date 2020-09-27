@@ -31,7 +31,7 @@ function App() {
        <Route path="/Men" component={Men}></Route>
        <Route path="/Women" component={Women}></Route>
        <Route path="/Slippers" component={Slippers}></Route>
-       <Route path="/men:id" component={Details}></Route>
+       <Route path="/shoe:id" component={Details}></Route>
        <Route path="/Addidas" component={Addidas}></Route>
        <Route path="/Air Jordan" component={AirJordan}></Route>
        <Route path="/Balenciaga" component={Balenciaga}></Route>

@@ -8,14 +8,14 @@ const AirJordan=()=>{
 
     return(
         <div className="Home-container">
+            <h1 style={{textAlign:'center'}}>Air Jordan</h1>
             <Brands />
-            <h1>Air Jordan</h1>
         <img  alt=""/>
         <div className="prooo">
     {data.map((proo, ind)=>proo.Category === 'Shoes' && proo.Gender === 'Men' && proo.Brand ==='Air Jordan' ?(
         
-        <div  className="pro-con">
-                <Link key={ind} className='lnk' to={`/men${proo.id}`}>
+        <div key={ind} className="pro-con">
+                <Link key={ind} className='lnk' to={`/shoe${proo.id}`}>
             <img src={proo.image} alt=""  title={proo.Name}/>
                 </Link>
                 <p>{proo.Name} < br /><strong>Rs.{proo.Price}</strong></p>
