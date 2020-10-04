@@ -16,6 +16,8 @@ import Nike from './Mens-collection/Nike'
 import Sky from './Mens-collection/Sky'
 import SuperMax from './Mens-collection/SuperMax'
 import Vans from './Mens-collection/Vans'
+import Login from './component/Login'
+import Register from './component/Register'
 import _404 from './Pages/_404'
 import Details from './Pages/details'
 import history from './Pages/history'
@@ -42,6 +44,8 @@ function App() {
        <Route path="/Sky" component={Sky}></Route>
        <Route path="/Super Max" component={SuperMax}></Route>
        <Route path="/Vans" component={Vans}></Route>
+       <Route path="/login" component={Login}></Route>
+       <Route path="/Register" component={Register}></Route>
        <Route path="**" component={_404}></Route>
     </Switch>
     </Layout>
